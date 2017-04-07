@@ -11,13 +11,26 @@ html(lang="es")
     body
         .app.pure-g
             header.pure-u-1
-                .pure-u-1-3
-                    h1.logo Finder challenge!
+                section.pure-u-1-3
+                    h1.logo Finder challenge
                 .pure-u-7-24
                     include blocks/search-form
                 .pure-u-1-3
             aside.filters.pure-u-1-4
+                .saved-searches
+                .categories
+                    h2 Búsquedas guardadas
+                    ul
+                        li
+                            a(href="#") Todos
+                        li
+                            a(href="#") Terror
+                        li
+                            a(href="#") Comedia
+                        li
+                            a(href="#") Drama
             content.pure-u-3-4
+
             footer.pure-u-1
 
         //- third party libraries
